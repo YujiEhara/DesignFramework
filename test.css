@@ -2,16 +2,19 @@
 
 html{
     height: 100%;
-    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",sans-serif;
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 }
-
 body{
     margin: 0;
     height: 100%;
     background-image: -webkit-linear-gradient(top, #4d4d4d, #000000);
 }
+a:link    { color: #837a68; text-decoration: none;}
+a:visited { color: #837a68; text-decoration: none;}
+a:hover   { color: #d49586; text-decoration: none;}
+a:active  { color: #d49586; text-decoration: none;}
 
-/*///////////////////////////index.htmlレイアウト*/
+/*/////////////////////ここから、カラムレイアウト*/
 
 #bg{
     position: absolute;
@@ -20,15 +23,76 @@ body{
     right: 0;
     bottom: 0;
     margin: auto;/*縦も中央配置にする*/
-    width: 1024px;/*画面サイズ*/
-    height: 768px;/*画面サイズ*/
-    background-image: url(img/bg.png);
-    background-color: #125084;
+    width : 1024px;
+    height: 768px;
+    background-image:url(img/bg001.png);/*背景画像がある場合はbg.pngで*/
     background-repeat: no-repeat;
     background-position: center;
     
-    /*デザイン背景に影をつける*/
+    /*デザイン背後に影を付ける*/
     box-shadow: 0px 20px 60px;
 }
 
-/*///////////////////////////index.htmlレイアウト*/
+#wapper { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1024px;
+    height: 768px;
+    display: block;
+    color: #fa7cff;/*文字色を指定する*/
+}
+
+#soft{/*ここにソフトの背景画像を入れるブラウザだったらブラ*/ウザ入り*/
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: calc(100% - 40px);
+    background-repeat: no-repeat;
+    background-image: url(img/softBG.pnng);
+}
+
+#header{
+    margin: 0;
+    padding: 0;
+    width: 1024px;
+    height: 100px;
+    text-align: center;
+}
+
+#main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: calc(768px - 100px - 80px - 40px);
+    text-align: center;
+}
+
+#footer {
+    position: absolute;
+    bottom: 40px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+#windowsBar {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(200, 200, 200, 0.3);/*背景色透過処理*/
+    background-repeat: no-repeat;
+    background-image: url(img/bg-footer-000.png),url(img/bg-footer-001.png),url(img/bg-footer-002.png);
+    background-position: top,left,right;
+}
+
+
+/*/////////////////////ここまで、カラムレイアウト*/
