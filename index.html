@@ -1,20 +1,27 @@
 <!DOCTYPE HTML PUBLIC "ISO/IEC 15445:2000//DTD HTML//JP">
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>DesignFrameWork</title>
-        <link href="test.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+        <LINK href="css/main.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     </head>
-    <body>
-        <div id="bg"></div>
-        
-        <div id="wapper">
-            <div id="soft"></div>
-            <div id="OSber"></div>
-        </div>
-        
-        <script src="load.js"></script>
-        
-    </body>
+  <body STYLE="overflow: hidden;"><!--スクロールバーを消している。-->
+      
+      <div id="bg"></div>
+      
+      <div id="wapper">
+          <div id="soft"></div>
+          <div id="header">
+              <span class = "left">Design FrameWork</span>
+              <span id = "subTitle" class = "right">subTitle</span>
+          </div>
+          <div id="footer">
+              <span id = "pageNum" class = "left">0</span>
+              <span class = "right"><img src="img/confidential.png"></span>
+          </div>
+      </div>
+      <script src="js/load.js"></script>
+      
+  </body>
 </html>
